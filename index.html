@@ -10,19 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <p>TranVietAnh</p>
+            <a href="/">TranVietAnh</a>
         </div>
         <div class="buttons">
-            <a href="#home">Trang chủ</a>
+            <a href="#home">Giới thiệu</a>
             <a href="#aboutme">Về mình</a>
-            <a href="">Mạng xã hội</a>
-            <a href="">Sở thích</a>
-            <a href="">Ảnh</a>
+            <a href="#socialmedia">Mạng xã hội</a>
+            <a href="#hobbit">Sở thích</a>
+            <a href="#listofimages">Ảnh</a>
         </div>
         <div class="contact">
             <button>Liên hệ</button>
@@ -38,7 +39,7 @@
                 <p>Xin chào, mình là Trần Việt Anh. Mình sinh năm 2001, đang là sinh viên năm cuối chuyên ngành IT tại
                     Greenwich Việt Nam. Mình là một dev và muốn thử sức với ngành BA. Lướt xuống dưới để tìm hiểu thêm
                     thông tin nhé.</p>
-                <button>About me</button>
+
             </div>
             <div class="home-right">
                 <img src="./images/avatar.jpg">
@@ -97,8 +98,8 @@
             <h3>#GoodLooking</h3>
         </div>
 
-        <div class="socialmedia">
-            <h1>Một số mạng xã hội mình thường dùng</h1>
+        <div class="socialmedia" id="socialmedia">
+            <h1>Mạng xã hội của mình</h1>
             <div class="listofbox">
                 <div class="box" id="facebook">
                     <i class="fa-brands fa-facebook"></i>
@@ -108,7 +109,7 @@
                     <i class="fa-brands fa-instagram"></i>
                     <h1>Instagram</h1>
                 </div>
-                <div class="box">
+                <div class="box" id="tiktok">
                     <i class="fa-brands fa-tiktok"></i>
                     <h1>Tiktok</h1>
                 </div>
@@ -116,10 +117,124 @@
         </div>
 
         <div class="highlight"></div>
+
+        <div class="hobbit" id="hobbit">
+            <h1>Sở thích của mình</h1>
+            <div class="listofbox">
+                <div class="box" id="music">
+                    <i class="fa-solid fa-music"></i>
+                    <h1>Âm nhạc</h1>
+                </div>
+                <div class="box" id="game">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <h1>Game</h1>
+                </div>
+                <div class="box" id="gym">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h1>Gym</h1>
+                </div>
+                <div class="box" id="date">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <h1>Workdate</h1>
+                </div>
+                <div class="box" id="movie">
+                    <i class="fa-solid fa-film"></i>
+                    <h1>Xem phim</h1>
+                </div>
+                <div class="box" id="sport">
+                    <i class="fa-solid fa-bicycle"></i>
+                    <h1>Đạp xe</h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <h3>#Happiness</h3>
+            <h3>#TakeAPicture</h3>
+            <h3>#RideBicycle</h3>
+            <h3>#Tarot</h3>
+        </div>
+
+        <div class="listofimages" id="listofimages">
+            <h1>Ảnh của mình</h1>
+            <div class="listofbox">
+                <div class="box" id="image1">
+                    <img src="./images/1.jpg">
+                </div>
+                <div class="box" id="image2">
+                    <img src="./images/2.jpg">
+                </div>
+                <div class="box" id="image3">
+                    <img src="./images/3.jpg">
+                </div>
+                <div class="box" id="image4">
+                    <img src="./images/4.jpg">
+                </div>
+                <div class="box" id="image5">
+                    <img src="./images/5.jpg">
+                </div>
+                <div class="box" id="image6">
+                    <img src="./images/6.jpg">
+                </div>
+                <div class="box" id="image6">
+                    <img src="./images/7.jpg">
+                </div>
+                <div class="box" id="image12">
+                    <img src="./images/8.jpg">
+                </div>
+                <div class="box" id="image8">
+                    <img src="./images/9.jpg">
+                </div>
+                <div class="box" id="image9">
+                    <img src="./images/10.jpg">
+                </div>
+                <div class="box" id="image10">
+                    <img src="./images/11.jpg">
+                </div>
+                <div class="box" id="image11">
+                    <img src="./images/12.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div class="highlight">
+            <h3>#Home</h3>
+            <h3>#Company</h3>
+            <h3>#Cafe</h3>
+            <h3>#Gym</h3>
+        </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="footer-left">
+            <h1>TranVietAnh</h1>
+            <button>Liên hệ tuyển dụng</button>
+        </div>
+        <div class="footer-right">
+            <button>Facebook</button>
+            <button>Instagram</button>
+            <button id="myBtn">Gmail</button>
+
+
+
+        </div>
+    </footer>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Gmail:tranvietanh20112001@gmail.com</p>
+        </div>
+
+    </div>
 
     <script src="index.js"></script>
+
+
+
+
 </body>
 
 </html>
