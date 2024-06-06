@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=\, initial-scale=1.0">
     <title>Tran Viet Anh</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="modal.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"
+        integrity="sha512-3J8teBiHrSyaaRBajZyIEtpDsXdPq1gsznKWIVb5CnorQuFhjWGhWe54z8YNnHHr7MZuExb9m5kvf964HiT1Sw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="/css/modal.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -34,7 +42,7 @@
 
         <div class="home" id="home">
             <div class="home-left">
-                <h1>Xin chào, mình là <span>Trần Việt Anh</span></h1>
+                <h1>Xin chào, mình là <span class="typing">Trần Việt Anh</span></h1>
                 <h1>Rất vui được làm quen với bạn.</h1>
                 <p>Xin chào, mình là Trần Việt Anh. Mình sinh năm 2001, đang là sinh viên năm cuối chuyên ngành IT tại
                     Greenwich Việt Nam. Mình là một dev và muốn thử sức với ngành BA. Lướt xuống dưới để tìm hiểu thêm
@@ -42,7 +50,7 @@
 
             </div>
             <div class="home-right">
-                <img src="./images/avatar.jpg">
+                <img src="./images/avatar.jpg" alt="Image" class="zoomable ">
             </div>
         </div>
 
@@ -100,6 +108,7 @@
 
         <div class="socialmedia" id="socialmedia">
             <h1>Mạng xã hội của mình</h1>
+            <p>Bấm vào đây để xem nhé</p>
             <div class="listofbox">
                 <div class="box" id="facebook">
                     <i class="fa-brands fa-facebook"></i>
@@ -167,34 +176,37 @@
                 <div class="box" id="image3">
                     <img src="./images/3.jpg">
                 </div>
-                <div class="box" id="image4">
+                <div class="box" id="image4" style="display: none;">
                     <img src="./images/4.jpg">
                 </div>
-                <div class="box" id="image5">
+                <div class="box" id="image5" style="display: none;">
                     <img src="./images/5.jpg">
                 </div>
-                <div class="box" id="image6">
+                <div class="box" id="image6" style="display: none;">
                     <img src="./images/6.jpg">
                 </div>
-                <div class="box" id="image6">
+                <div class="box" id="image6" style="display: none;">
                     <img src="./images/7.jpg">
                 </div>
-                <div class="box" id="image12">
+                <div class="box" id="image12" style="display: none;">
                     <img src="./images/8.jpg">
                 </div>
-                <div class="box" id="image8">
+                <div class="box" id="image8" style="display: none;">
                     <img src="./images/9.jpg">
                 </div>
-                <div class="box" id="image9">
+                <div class="box" id="image9" style="display: none;">
                     <img src="./images/10.jpg">
                 </div>
-                <div class="box" id="image10">
+                <div class="box" id="image10" style="display: none;">
                     <img src="./images/11.jpg">
                 </div>
-                <div class="box" id="image11">
+                <div class="box" id="image11" style="display: none;">
                     <img src="./images/12.jpg">
                 </div>
             </div>
+
+            <button onclick="showAllImages()" id="showAllImages" style="margin-bottom: 20px;">Hiển thị tất cả
+                ảnh</button>
         </div>
 
         <div class="highlight">
@@ -219,18 +231,15 @@
         </div>
     </footer>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
 
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>Gmail:tranvietanh20112001@gmail.com</p>
-        </div>
+    <script src="/js/index.js"></script>
 
+    <div class="modal" id="modal">
+        <span class="close" id="close">&times;</span>
+        <img src="./images/1.jpg" alt="Zoomed Image" class="modal-content" id="zoomed-img">
     </div>
 
-    <script src="index.js"></script>
+    <script src="/js/modal.js"></script>
 
 
 

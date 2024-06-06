@@ -8,6 +8,8 @@
     --button-height: 43px;
     --border-radius: 8px;
     --text-color: #878787;
+    --blue: #00fffc;
+
 }
 
 p, h1, h2, h3, h4, h5, h6, a, th, td, button, span {
@@ -152,6 +154,8 @@ main {
 .home-right img {
     width: 50%;
     border-radius: var(--border-radius);
+    box-shadow: 0 0 20px var(--yellow);
+    cursor: pointer;
 }
 
 
@@ -212,6 +216,10 @@ main {
     i {
         font-size: 48px;
     }
+}
+
+.socialmedia .listofbox .box {
+    box-shadow: 0 0 20px var(--blue);
 }
 
 .box:hover {
@@ -330,6 +338,7 @@ footer {
     .home {
         display: block;
         height: 100%;
+        padding-bottom: 30px;
     }
 
     .home-left {
@@ -396,6 +405,10 @@ footer {
         width: 90%;
     }
 
+    .socialmedia .listofbox .box {
+        box-shadow: 0 0 5px var(--blue);
+    }
+
     .listofimages .listofbox {
         flex-direction: column;
 
@@ -407,52 +420,4 @@ footer {
             width: 100%;
         }
     }
-}
-
-/* The Modal (background) */
-.modal {
-    display: none;
-    /* Hidden by default */
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    height: 100vh;
-    /* Full height */
-    overflow: auto;
-    /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0);
-    /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
-    /* Black w/ opacity */
-}
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
